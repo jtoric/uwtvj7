@@ -51,6 +51,27 @@ Kontakt (pages/contact.html)
 └── README.md
 ```
 
+## Navigacijska mapa
+
+Dijagram pokazuje kako su stranice međusobno povezane:
+
+```
+                    ┌──────────────┐
+                    │   Početna    │
+                    │  index.html  │
+                    └──────┬───────┘
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+   ┌──────▼───────┐ ┌─────▼──────┐ ┌───────▼──────┐
+   │   Programi   │ │   O nama   │ │   Kontakt    │
+   │programs.html │ │ about.html │ │contact.html  │
+   └──────────────┘ └────────────┘ └──────────────┘
+
+Svaka stranica ima globalnu navigaciju (header) i footer
+s linkovima na sve ostale stranice → potpuno povezana mreža.
+```
+
 ## Tehnologije
 
 - **HTML5** — semantički elementi, pristupačnost (a11y)
