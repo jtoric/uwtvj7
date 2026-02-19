@@ -1,0 +1,18 @@
+# EditorConfig — osigurava konzistentan stil koda
+# neovisno o editoru (VS Code, Sublime, WebStorm…)
+# https://editorconfig.org
+
+root = true
+
+# Pravila za sve datoteke
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown: trailing spaces mogu značiti <br>, pa ih ne brišemo
+[*.md]
+trim_trailing_whitespace = false
