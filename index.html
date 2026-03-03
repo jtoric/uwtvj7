@@ -14,9 +14,15 @@
 
   <!-- ========== HEADER ========== -->
   <header>
-    <nav>
+    <!-- aria-label daje naziv ovom <nav> elementu za screen readere.
+         Stranica može imati više <nav> elemenata (npr. header i footer),
+         pa aria-label pomaže razlikovati ih ("Glavna navigacija" vs "Footer navigacija"). -->
+    <nav aria-label="Glavna navigacija">
       <ul>
-        <li><a class="active" href="index.html">Početna</a></li>
+        <!-- aria-current="page" govori screen readeru da ovaj link
+             pokazuje na stranicu na kojoj se korisnik trenutno nalazi.
+             Bez toga, slijepi korisnik ne bi znao koja stavka menija je "aktivna". -->
+        <li><a class="active" aria-current="page" href="index.html">Početna</a></li>
         <li><a href="pages/programs.html">Programi</a></li>
         <li><a href="pages/about.html">O nama</a></li>
         <li><a href="pages/contact.html">Kontakt</a></li>
