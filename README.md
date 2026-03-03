@@ -77,3 +77,25 @@ s linkovima na sve ostale stranice → potpuno povezana mreža.
 - **HTML5** — semantički elementi, pristupačnost (a11y)
 - **CSS3** — custom properties, Flexbox, Grid, media queries
 - **Bez JavaScripta** — čisti HTML/CSS projekt
+
+## Pristupačnost (a11y)
+
+Projekt od početka prati osnovna pravila pristupačnosti:
+
+- **Skip link** — `<a class="skip-link" href="#main">` na svim stranicama omogućuje
+  korisnicima tipkovnice preskakanje navigacije
+- **Semantički HTML** — `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>`, `<figure>`
+- **aria-label** — razlikuje glavnu navigaciju (`"Glavna navigacija"`) od footer navigacije (`"Footer navigacija"`)
+- **aria-current="page"** — označava aktivnu stranicu u izborniku za screen readere
+- **Alt tekst** — svaka informativna slika ima smislen `alt` opis
+- **figure / figcaption** — slike s opisom grupirane semantički
+
+## Status projekta
+
+| Predavanje | Tema | Status |
+|------------|------|--------|
+| 1 | HTML struktura + sitemap | ✅ Gotovo |
+| 2 | Navigacija + pristupačnost | ✅ Gotovo |
+| 3 | Forme + tablice + mediji | ⬜ Planirano |
+| 4 | CSS osnove: tipografija i razmaci | ⬜ Planirano |
+| 5 | Layout: Flexbox i Grid | ⬜ Planirano |
