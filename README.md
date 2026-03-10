@@ -96,6 +96,6 @@ Projekt od početka prati osnovna pravila pristupačnosti:
 |------------|------|--------|
 | 1 | HTML struktura + sitemap | ✅ Gotovo |
 | 2 | Navigacija + pristupačnost | ✅ Gotovo |
-| 3 | Forme + tablice + mediji | ⬜ Planirano |
+| 3 | Forme + tablice + mediji | ✅ Gotovo |
 | 4 | CSS osnove: tipografija i razmaci | ⬜ Planirano |
 | 5 | Layout: Flexbox i Grid | ⬜ Planirano |
