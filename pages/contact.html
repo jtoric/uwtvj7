@@ -24,16 +24,65 @@
   <!-- ========== GLAVNI SADRŽAJ ========== -->
   <main id="main">
 
-    <!-- KONTAKT FORMA — obrazac za upit korisnika -->
+    <!-- KONTAKT FORMA -->
     <section class="contact-form">
       <h1>Kontaktirajte nas</h1>
-      <p>Ovdje će biti kontakt forma s validacijom.</p>
+      <p>Imate pitanje o našim programima? Ispunite formu i javit ćemo vam se u najkraćem roku.</p>
+
+      <form action="#" method="post">
+
+        <!-- Grupa: osobni podaci -->
+        <fieldset>
+          <legend>Osobni podaci</legend>
+
+          <label for="name">Ime i prezime *</label>
+          <input type="text" id="name" name="name" required
+                 placeholder="npr. Ana Horvat">
+
+          <label for="email">Email adresa *</label>
+          <input type="email" id="email" name="email" required
+                 placeholder="ime@example.com">
+
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone"
+                 pattern="[0-9]{9,10}" placeholder="0911234567">
+        </fieldset>
+
+        <!-- Grupa: poruka -->
+        <fieldset>
+          <legend>Vaš upit</legend>
+
+          <label for="topic">Tema upita</label>
+          <select id="topic" name="topic">
+            <option value="">-- Odaberite temu --</option>
+            <option value="info">Opće informacije</option>
+            <option value="programs">Programi i raspored</option>
+            <option value="pricing">Cijene i uplate</option>
+            <option value="other">Ostalo</option>
+          </select>
+
+          <label for="message">Poruka *</label>
+          <textarea id="message" name="message" rows="6" required
+                    minlength="10" placeholder="Opišite svoj upit…"></textarea>
+        </fieldset>
+
+        <button type="submit">Pošalji poruku</button>
+
+      </form>
     </section>
 
-    <!-- KONTAKT INFORMACIJE — adresa, email, telefon -->
+    <!-- KONTAKT INFORMACIJE -->
     <section class="contact-info">
       <h2>Osnovne informacije</h2>
-      <p>Ovdje će biti prikazani kontakt podaci.</p>
+
+      <address>
+        <p><strong>Training Programs Library</strong></p>
+        <p>Ulica Mihovila Pavlinovića 1, 23000 Zadar</p>
+        <p>Email: <a href="mailto:info@trainingprograms.hr">info@trainingprograms.hr</a></p>
+        <p>Telefon: <a href="tel:+385911234567">091 123 4567</a></p>
+      </address>
+
+      <p>Radno vrijeme: ponedjeljak — petak, 08:00 — 16:00</p>
     </section>
 
   </main>
