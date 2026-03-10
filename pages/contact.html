@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Programs Library — Kontakt</title>
 </head>
+
 <body data-page="contact">
 
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
@@ -31,21 +33,29 @@
 
       <form action="#" method="post">
 
+        <!-- Globalne poruke nakon slanja (priprema za JS) -->
+        <div class="form-message form-message--success" hidden>
+          <p>Hvala na poruci! Javit ćemo vam se u najkraćem roku.</p>
+        </div>
+        <div class="form-message form-message--error" hidden>
+          <p>Nešto je pošlo po krivu. Molimo pokušajte ponovno.</p>
+        </div>
+
         <!-- Grupa: osobni podaci -->
         <fieldset>
           <legend>Osobni podaci</legend>
 
           <label for="name">Ime i prezime *</label>
-          <input type="text" id="name" name="name" required
-                 placeholder="npr. Ana Horvat">
+          <input type="text" id="name" name="name" required placeholder="npr. Ana Horvat">
+          <p class="form-help">Unesite puno ime i prezime.</p>
 
           <label for="email">Email adresa *</label>
-          <input type="email" id="email" name="email" required
-                 placeholder="ime@example.com">
+          <input type="email" id="email" name="email" required placeholder="ime@example.com">
+          <p class="form-help">Unesite valjanu email adresu (npr. ana@example.com).</p>
 
           <label for="phone">Telefon</label>
-          <input type="tel" id="phone" name="phone"
-                 pattern="[0-9]{9,10}" placeholder="0911234567">
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{9,10}" placeholder="0911234567">
+          <p class="form-help">Neobavezno. Format: 9 ili 10 znamenki bez razmaka.</p>
         </fieldset>
 
         <!-- Grupa: poruka -->
@@ -60,10 +70,12 @@
             <option value="pricing">Cijene i uplate</option>
             <option value="other">Ostalo</option>
           </select>
+          <p class="form-help">Odaberite temu kako bismo brže odgovorili.</p>
 
           <label for="message">Poruka *</label>
-          <textarea id="message" name="message" rows="6" required
-                    minlength="10" placeholder="Opišite svoj upit…"></textarea>
+          <textarea id="message" name="message" rows="6" required minlength="10"
+            placeholder="Opišite svoj upit…"></textarea>
+          <p class="form-help">Minimalno 10 znakova. Opišite što detaljnije svoj upit.</p>
         </fieldset>
 
         <button type="submit">Pošalji poruku</button>
@@ -105,4 +117,5 @@
   </footer>
 
 </body>
+
 </html>
