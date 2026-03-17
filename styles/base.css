@@ -199,9 +199,9 @@ select {
   margin-bottom: var(--space-1);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
   outline: 2px solid var(--color-focus);
   outline-offset: 2px;
   border-color: var(--color-focus);
@@ -237,4 +237,29 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   opacity: 0.9;
+}
+
+button[type="submit"]:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Pristupačnost ---------- */
+
+/* Svi interaktivni elementi: konzistentan fokus */
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* Iframe responzivni omotac */
+figure iframe {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+}
+
+/* Odabir teksta - dovoljan kontrast */
+::selection {
+  background-color: var(--color-primary);
+  color: #fff;
 }
