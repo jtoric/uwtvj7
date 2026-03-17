@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Training Programs Library — Početna</title>
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
 </head>
 <!-- data-page označava koja je stranica aktivna; JS to može pročitati i prilagoditi UI -->
 <body data-page="home">
@@ -17,17 +19,19 @@
     <!-- aria-label daje naziv ovom <nav> elementu za screen readere.
          Stranica može imati više <nav> elemenata (npr. header i footer),
          pa aria-label pomaže razlikovati ih ("Glavna navigacija" vs "Footer navigacija"). -->
-    <nav aria-label="Glavna navigacija">
-      <ul>
-        <!-- aria-current="page" govori screen readeru da ovaj link
-             pokazuje na stranicu na kojoj se korisnik trenutno nalazi.
-             Bez toga, slijepi korisnik ne bi znao koja stavka menija je "aktivna". -->
-        <li><a class="active" aria-current="page" href="index.html">Početna</a></li>
-        <li><a href="pages/programs.html">Programi</a></li>
-        <li><a href="pages/about.html">O nama</a></li>
-        <li><a href="pages/contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav aria-label="Glavna navigacija">
+        <ul>
+          <!-- aria-current="page" govori screen readeru da ovaj link
+               pokazuje na stranicu na kojoj se korisnik trenutno nalazi.
+               Bez toga, slijepi korisnik ne bi znao koja stavka menija je "aktivna". -->
+          <li><a class="active" aria-current="page" href="index.html">Početna</a></li>
+          <li><a href="pages/programs.html">Programi</a></li>
+          <li><a href="pages/about.html">O nama</a></li>
+          <li><a href="pages/contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- ========== GLAVNI SADRŽAJ ========== -->
@@ -36,44 +40,50 @@
 
     <!-- HERO SEKCIJA — uvodni dio s naslovom i pozivom na akciju -->
     <section class="hero">
-      <h1>Pronađi svoj program treninga</h1>
-      <p>Istraži širok izbor programa prilagođenih tvojim ciljevima.</p>
+      <div class="container">
+        <h1>Pronađi svoj program treninga</h1>
+        <p>Istraži širok izbor programa prilagođenih tvojim ciljevima.</p>
 
-      <!-- <figure> grupira sliku i njen opis (caption) u jednu cjelinu.
-           <figcaption> daje tekstualni opis slike vidljiv svim korisnicima.
-           alt atribut opisuje značenje slike za screen readere i kada se slika ne učita.
-           Pravilo: alt opisuje što slika ZNAČI, ne kako se zove datoteka. -->
-      <figure>
-        <img src="assets/img/hero-training.jpg" alt="Grupa polaznika vježba u modernoj teretani">
-        <figcaption>Naši programi pokrivaju sve razine — od početnika do naprednih.</figcaption>
-      </figure>
+        <!-- <figure> grupira sliku i njen opis (caption) u jednu cjelinu.
+             <figcaption> daje tekstualni opis slike vidljiv svim korisnicima.
+             alt atribut opisuje značenje slike za screen readere i kada se slika ne učita.
+             Pravilo: alt opisuje što slika ZNAČI, ne kako se zove datoteka. -->
+        <figure>
+          <img src="assets/img/hero-training.jpg" alt="Grupa polaznika vježba u modernoj teretani">
+          <figcaption>Naši programi pokrivaju sve razine — od početnika do naprednih.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- ISTAKNUTI PROGRAMI -->
     <section class="featured">
-      <h2>Istaknuti programi</h2>
-      <p>Pogledajte neke od najpopularnijih programa koje nudimo.</p>
+      <div class="container">
+        <h2>Istaknuti programi</h2>
+        <p>Pogledajte neke od najpopularnijih programa koje nudimo.</p>
 
-      <figure>
-        <img src="assets/img/featured-strength.jpg" alt="Polaznica izvodi vježbu čučnja s utezima">
-        <figcaption>Strength Training — izgradnja snage kroz strukturirane treninge.</figcaption>
-      </figure>
+        <figure>
+          <img src="assets/img/featured-strength.jpg" alt="Polaznica izvodi vježbu čučnja s utezima">
+          <figcaption>Strength Training — izgradnja snage kroz strukturirane treninge.</figcaption>
+        </figure>
 
-      <figure>
-        <img src="assets/img/featured-cardio.jpg" alt="Polaznica trči na traci u fitness centru">
-        <figcaption>Kardio program — poboljšaj izdržljivost i zdravlje srca.</figcaption>
-      </figure>
+        <figure>
+          <img src="assets/img/featured-cardio.jpg" alt="Polaznica trči na traci u fitness centru">
+          <figcaption>Kardio program — poboljšaj izdržljivost i zdravlje srca.</figcaption>
+        </figure>
 
-      <figure>
-        <img src="assets/img/featured-yoga.jpg" alt="Polaznici izvode yoga poze u osvijetljenoj dvorani">
-        <figcaption>Yoga — fleksibilnost, ravnoteža i mentalni mir.</figcaption>
-      </figure>
+        <figure>
+          <img src="assets/img/featured-yoga.jpg" alt="Polaznici izvode yoga poze u osvijetljenoj dvorani">
+          <figcaption>Yoga — fleksibilnost, ravnoteža i mentalni mir.</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- POGODNOSTI — zašto odabrati ovu platformu -->
     <section class="benefits">
-      <h2>Zašto mi?</h2>
-      <p>Ovdje će biti navedene ključne pogodnosti platforme.</p>
+      <div class="container">
+        <h2>Zašto mi?</h2>
+        <p>Ovdje će biti navedene ključne pogodnosti platforme.</p>
+      </div>
     </section>
 
   </main>
@@ -84,17 +94,19 @@
     <!-- Sekundarna navigacija u footeru — ponavlja linkove iz headera
          kako bi korisnik mogao navigirati i bez skrolanja na vrh.
          aria-label razlikuje ovu navigaciju od glavne u headeru. -->
-    <nav aria-label="Footer navigacija">
-      <ul>
-        <li><a href="index.html">Početna</a></li>
-        <li><a href="pages/programs.html">Programi</a></li>
-        <li><a href="pages/about.html">O nama</a></li>
-        <li><a href="pages/contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav aria-label="Footer navigacija">
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="pages/programs.html">Programi</a></li>
+          <li><a href="pages/about.html">O nama</a></li>
+          <li><a href="pages/contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
 
-    <p>&copy; 2026 Training Programs Library. Sva prava pridržana.</p>
-    <p>Projekt izrađen u sklopu kolegija Uvod u web tehnologije — Sveučilište u Zadru.</p>
+      <p>&copy; 2026 Training Programs Library. Sva prava pridržana.</p>
+      <p>Projekt izrađen u sklopu kolegija Uvod u web tehnologije — Sveučilište u Zadru.</p>
+    </div>
 
   </footer>
 
