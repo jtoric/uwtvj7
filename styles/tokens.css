@@ -1,0 +1,33 @@
+/* ==============================================
+   DESIGN TOKENI
+   Centralizirane vrijednosti za cijeli projekt.
+   Sve ostale CSS datoteke koriste var(--token).
+   ============================================== */
+
+:root {
+  /* ---------- Boje ---------- */
+  --color-primary:    #0057b8;
+  --color-secondary:  #f5a623;
+  --color-bg:         #ffffff;
+  --color-surface:    #f8f8f8;
+  --color-text:       #1a1a2e;
+  --color-text-muted: #555555;
+  --color-border:     #dddddd;
+  --color-focus:      #0057b8;
+
+  /* ---------- Spacing skala (baza 8px) ---------- */
+  --space-1: 0.25rem;   /*  4px */
+  --space-2: 0.5rem;    /*  8px */
+  --space-3: 1rem;      /* 16px */
+  --space-4: 1.5rem;    /* 24px */
+  --space-5: 2rem;      /* 32px */
+  --space-6: 3rem;      /* 48px */
+
+  /* ---------- Zaobljenja ---------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* ---------- Tipografija ---------- */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", ui-monospace, monospace;
+}
