@@ -90,3 +90,151 @@ p {
   margin-bottom: var(--space-3);
   max-width: 65ch;
 }
+
+/* ---------- Sekcije ---------- */
+
+section {
+  padding: var(--space-6) 0;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  padding: var(--space-5) 0;
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* ---------- Figure / figcaption ---------- */
+
+figure {
+  margin-bottom: var(--space-4);
+}
+
+figure img {
+  max-width: 480px;
+  border-radius: var(--radius-md);
+}
+
+figcaption {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* ---------- Navigacija (liste) ---------- */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-4);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--color-primary);
+}
+
+/* ---------- Tablica ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-4);
+}
+
+caption {
+  text-align: left;
+  margin-bottom: var(--space-2);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+th, td {
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+thead th {
+  background-color: var(--color-surface);
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: var(--color-surface);
+}
+
+/* ---------- Forme ---------- */
+
+label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+  margin-bottom: var(--space-1);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-color: var(--color-focus);
+}
+
+fieldset {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 var(--space-2);
+}
+
+.form-help {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+button[type="submit"] {
+  padding: var(--space-2) var(--space-5);
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
+}
