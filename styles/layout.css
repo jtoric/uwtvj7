@@ -43,14 +43,16 @@
   display: flex;
   align-items: center;
   gap: var(--space-5);
+  flex-wrap: wrap;
 }
 
 .hero-content {
-  flex: 1; /* raste ravnomjerno — dijeli prostor 50/50 sa slikom */
+  flex: 1 1 300px; /* min 300px, raste ravnomjerno */
 }
 
 .hero figure {
-  flex: 1; /* raste ravnomjerno — dijeli prostor 50/50 s tekstom */
+  flex: 1 1 300px; /* min 300px, raste ravnomjerno */
+  min-width: 0; /* sprjecava flex item overflow */
   margin-bottom: 0;
 }
 
@@ -87,12 +89,13 @@
 }
 
 .program-grid figure img {
-  width: 600px; /* BUG: fiksna sirina uzrokuje overflow na uzim ekranima */
+  width: 100%;
   height: 280px;
   object-fit: cover;
   object-position: top;
 }
 
-* {
-  outline: 1px solid red !important; /* DEBUG: prikazuje granice elemenata */
-}
+/* Debug notes:
+   Bug: width: 600px na .program-grid figure img uzrokovao horizontalni scroll.
+   Dijagnoza: * { outline: 1px solid red } otkrio element koji strši izvan containera.
+   Fix: zamijeniti fiksnu širinu s width: 100% (relativna jedinica). */

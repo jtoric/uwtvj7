@@ -151,6 +151,10 @@ nav a.active {
 
 /* ---------- Tablica ---------- */
 
+.table-wrap {
+  overflow-x: auto; /* horizontalni scroll kad tablica ne stane */
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
