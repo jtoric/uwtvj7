@@ -87,8 +87,12 @@
 }
 
 .program-grid figure img {
-  width: 100%;
+  width: 600px; /* BUG: fiksna sirina uzrokuje overflow na uzim ekranima */
   height: 280px;
-  object-fit: cover; /* reže sliku umjesto da je razvlači */
-  object-position: top; /* fokus na gornji dio slike (lica) */
+  object-fit: cover;
+  object-position: top;
+}
+
+* {
+  outline: 1px solid red !important; /* DEBUG: prikazuje granice elemenata */
 }
