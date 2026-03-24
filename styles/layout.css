@@ -66,3 +66,29 @@
   flex: 1 1 280px; /* raste/skuplja se, min 280px prije prelaska u novi red */
   margin-bottom: 0;
 }
+
+.featured-grid figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ---------- Programs grid (CSS Grid) ---------- */
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+}
+
+.program-grid figure {
+  margin-bottom: 0;
+}
+
+.program-grid figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover; /* reže sliku umjesto da je razvlači */
+  object-position: top; /* fokus na gornji dio slike (lica) */
+}
