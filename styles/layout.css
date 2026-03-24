@@ -36,3 +36,20 @@
 .site-footer nav ul {
   justify-content: center;
 }
+
+/* ---------- Hero layout ---------- */
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.hero-content {
+  flex: 1; /* raste ravnomjerno — dijeli prostor 50/50 sa slikom */
+}
+
+.hero figure {
+  flex: 1; /* raste ravnomjerno — dijeli prostor 50/50 s tekstom */
+  margin-bottom: 0;
+}
