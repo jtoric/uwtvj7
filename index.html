@@ -6,6 +6,7 @@
   <title>Training Programs Library — Početna</title>
   <link rel="stylesheet" href="styles/tokens.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
 </head>
 <!-- data-page označava koja je stranica aktivna; JS to može pročitati i prilagoditi UI -->
 <body data-page="home">
@@ -15,11 +16,9 @@
   <a class="skip-link" href="#main">Preskoči na sadržaj</a>
 
   <!-- ========== HEADER ========== -->
-  <header>
-    <!-- aria-label daje naziv ovom <nav> elementu za screen readere.
-         Stranica može imati više <nav> elemenata (npr. header i footer),
-         pa aria-label pomaže razlikovati ih ("Glavna navigacija" vs "Footer navigacija"). -->
+  <header class="site-header">
     <div class="container">
+      <a class="logo" href="index.html">Training Programs</a>
       <nav aria-label="Glavna navigacija">
         <ul>
           <!-- aria-current="page" govori screen readeru da ovaj link
@@ -89,11 +88,7 @@
   </main>
 
   <!-- ========== FOOTER ========== -->
-  <footer>
-
-    <!-- Sekundarna navigacija u footeru — ponavlja linkove iz headera
-         kako bi korisnik mogao navigirati i bez skrolanja na vrh.
-         aria-label razlikuje ovu navigaciju od glavne u headeru. -->
+  <footer class="site-footer">
     <div class="container">
       <nav aria-label="Footer navigacija">
         <ul>

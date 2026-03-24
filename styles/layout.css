@@ -1,0 +1,38 @@
+/* ==============================================
+   LAYOUT
+   Flex/Grid layout za header, footer i sekcije.
+   Ovisi o tokens.css i base.css.
+   ============================================== */
+
+/* ---------- Header layout ---------- */
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header .logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.site-header .logo:hover {
+  color: var(--color-primary);
+}
+
+/* ---------- Footer layout ---------- */
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+}
+
+.site-footer nav ul {
+  justify-content: center;
+}
