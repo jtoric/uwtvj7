@@ -53,3 +53,16 @@
   flex: 1; /* raste ravnomjerno — dijeli prostor 50/50 s tekstom */
   margin-bottom: 0;
 }
+
+/* ---------- Featured grid (flex) ---------- */
+
+.featured-grid {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap; /* kartice prelaze u novi red kad nema mjesta */
+}
+
+.featured-grid figure {
+  flex: 1 1 280px; /* raste/skuplja se, min 280px prije prelaska u novi red */
+  margin-bottom: 0;
+}
