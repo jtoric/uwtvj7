@@ -99,3 +99,34 @@
    Bug: width: 600px na .program-grid figure img uzrokovao horizontalni scroll.
    Dijagnoza: * { outline: 1px solid red } otkrio element koji strši izvan containera.
    Fix: zamijeniti fiksnu širinu s width: 100% (relativna jedinica). */
+
+/* ==============================================
+   RESPONSIVE BREAKPOINTS (mobile-first)
+   Base = mobitel, media queryji dodaju za vece ekrane.
+   ============================================== */
+
+@media (min-width: 768px) {
+  /* Hero: na tabletu tekst i slika idu u red */
+  .hero .container {
+    flex-wrap: nowrap;
+  }
+
+  /* Tipografija: veci naslovi na sirem ekranu */
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.75rem; }
+}
+
+@media (min-width: 1024px) {
+  /* Container: veci padding na desktopu */
+  .container {
+    padding-inline: var(--space-5);
+  }
+
+  /* Hero: veci gap na desktopu */
+  .hero .container {
+    gap: var(--space-6);
+  }
+
+  /* Tipografija: jos veci naslovi */
+  h1 { font-size: 3rem; }
+}
