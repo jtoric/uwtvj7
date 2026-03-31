@@ -6,6 +6,10 @@
 
 /* ---------- Header layout ---------- */
 
+.site-header {
+  position: relative; /* anchor za apsolutno pozicioniran mobilni nav */
+}
+
 .site-header .container {
   display: flex;
   justify-content: space-between;
@@ -99,6 +103,66 @@
    Bug: width: 600px na .program-grid figure img uzrokovao horizontalni scroll.
    Dijagnoza: * { outline: 1px solid red } otkrio element koji strši izvan containera.
    Fix: zamijeniti fiksnu širinu s width: 100% (relativna jedinica). */
+
+/* ---------- Hamburger toggle (CSS-only) ---------- */
+
+.nav-toggle {
+  display: none; /* checkbox je uvijek skriven */
+}
+
+.nav-toggle-label {
+  display: none; /* vidljiv samo na mobitelu (vidi media query) */
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+/* Hamburger ikona: 3 linije od span + ::before/::after */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text);
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before { top: -7px; }
+.nav-toggle-label span::after  { top:  7px; }
+
+/* Na mobitelu: hamburger vidljiv, nav skriven */
+@media (max-width: 767px) {
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .site-header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--color-bg);
+    padding: var(--space-4);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  /* Checkbox hack: kad je checked, prikaži nav */
+  .nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  .site-header nav ul {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+}
 
 /* ==============================================
    RESPONSIVE BREAKPOINTS (mobile-first)
