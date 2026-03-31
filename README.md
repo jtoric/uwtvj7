@@ -97,5 +97,15 @@ Projekt od početka prati osnovna pravila pristupačnosti:
 | 1 | HTML struktura + sitemap | ✅ Gotovo |
 | 2 | Navigacija + pristupačnost | ✅ Gotovo |
 | 3 | Forme + tablice + mediji | ✅ Gotovo |
-| 4 | CSS osnove: tipografija i razmaci | ⬜ Planirano |
-| 5 | Layout: Flexbox i Grid | ⬜ Planirano |
+| 4 | CSS osnove: tipografija i razmaci | ✅ Gotovo |
+| 5 | Layout: Flexbox i Grid | ✅ Gotovo |
+| 6 | Responsive dizajn + hamburger | ✅ Gotovo |
+| 7 | Uredan CSS, komponente i finalizacija | ⬜ Planirano |
+
+## Debug notes
+
+**Overflow bug (Predavanje 5):** `width: 600px` na `.program-grid figure img` uzrokovao horizontalni scroll.
+Dijagnoza: `* { outline: 1px solid red }` otkrio element koji strši. Fix: zamijeniti s `width: 100%`.
+
+**Z-index bug (Predavanje 6):** Hero sekcija s `position: relative; z-index: 10` prekrivala otvoreni mobilni nav.
+Fix: `position: sticky; top: 0; z-index: 100` na header — uvijek iznad sadržaja.

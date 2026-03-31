@@ -7,7 +7,10 @@
 /* ---------- Header layout ---------- */
 
 .site-header {
-  position: relative; /* anchor za apsolutno pozicioniran mobilni nav */
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
 }
 
 .site-header .container {
@@ -42,13 +45,6 @@
 }
 
 /* ---------- Hero layout ---------- */
-
-/* BUG: position: relative ovdje stvara novi stacking context
-   koji prekriva otvoreni mobilni nav panel */
-.hero {
-  position: relative;
-  z-index: 10;
-}
 
 .hero .container {
   display: flex;
