@@ -102,6 +102,24 @@ section:nth-of-type(even) {
   background-color: var(--color-bg-alt);
 }
 
+/* ---------- Navigacija (liste) ---------- */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-4);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--color-primary);
+}
+
 /* ---------- Header ---------- */
 
 header {
@@ -120,7 +138,7 @@ footer {
 }
 
 footer a {
-  color: #cce0ff;
+  color: #ffffff;
 }
 
 /* ---------- Figure / figcaption ---------- */
@@ -138,24 +156,6 @@ figcaption {
   margin-top: var(--space-2);
   font-size: 0.875rem;
   color: var(--color-text-muted);
-}
-
-/* ---------- Navigacija (liste) ---------- */
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: var(--space-4);
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-nav a:hover,
-nav a.active {
-  color: var(--color-primary);
 }
 
 /* ---------- Tablica ---------- */
