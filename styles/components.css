@@ -72,3 +72,33 @@
   font-size: 0.875rem;
   color: var(--color-text-muted);
 }
+
+/* ---------- Form validacija ---------- */
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #2e7d32;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: #c62828;
+}
+
+/* Poruke o uspjehu/grešci */
+.form-message--success {
+  color: #2e7d32;
+  background: #e8f5e9;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+}
+
+.form-message--error {
+  color: #c62828;
+  background: #ffebee;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-3);
+}
