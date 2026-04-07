@@ -100,7 +100,17 @@ Projekt od početka prati osnovna pravila pristupačnosti:
 | 4 | CSS osnove: tipografija i razmaci | ✅ Gotovo |
 | 5 | Layout: Flexbox i Grid | ✅ Gotovo |
 | 6 | Responsive dizajn + hamburger | ✅ Gotovo |
-| 7 | Uredan CSS, komponente i finalizacija | ⬜ Planirano |
+| 7 | Uredan CSS, komponente i finalizacija | ✅ Gotovo |
+
+## Deploy (Netlify)
+
+1. Registrirajte se na [netlify.com](https://www.netlify.com) (može s GitHub računom)
+2. Kliknite **Add new site** → **Import an existing project**
+3. Povežite GitHub repozitorij
+4. Branch: **main**, Publish directory: **/** (root)
+5. Kliknite Deploy — stranica je live za 30 sekundi
+
+Svaki push na `main` automatski pokreće novi deploy.
 
 ## Debug notes
 
