@@ -97,6 +97,11 @@ section {
   padding: var(--space-6) 0;
 }
 
+/* Alterirajuce pozadine za vizualni ritam */
+section:nth-of-type(even) {
+  background-color: var(--color-bg-alt);
+}
+
 /* ---------- Header ---------- */
 
 header {
@@ -108,10 +113,14 @@ header {
 
 footer {
   padding: var(--space-5) 0;
-  margin-top: var(--space-6);
-  border-top: 1px solid var(--color-border);
-  color: var(--color-text-muted);
+  margin-top: 0;
+  background-color: var(--color-hero-bg);
+  color: #cccccc;
   font-size: 0.875rem;
+}
+
+footer a {
+  color: #cce0ff;
 }
 
 /* ---------- Figure / figcaption ---------- */
@@ -249,6 +258,18 @@ button[type="submit"]:focus-visible {
 }
 
 /* ---------- Pristupačnost ---------- */
+
+/* Vizualno skriveno, ali čitljivo za screen readere */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 /* Svi interaktivni elementi: konzistentan fokus */
 :focus-visible {

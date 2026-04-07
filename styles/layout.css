@@ -46,6 +46,19 @@
 
 /* ---------- Hero layout ---------- */
 
+.hero {
+  background-color: var(--color-hero-bg);
+  color: #ffffff;
+}
+
+.hero a:not(.btn) {
+  color: #cce0ff;
+}
+
+.hero figcaption {
+  color: #aaaaaa;
+}
+
 .hero .container {
   display: flex;
   align-items: center;

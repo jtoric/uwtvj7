@@ -9,11 +9,13 @@
   --color-primary:    #0057b8;
   --color-secondary:  #f5a623;
   --color-bg:         #ffffff;
+  --color-bg-alt:     #f0f4f8;
   --color-surface:    #f8f8f8;
   --color-text:       #1a1a2e;
   --color-text-muted: #555555;
   --color-border:     #dddddd;
   --color-focus:      #0057b8;
+  --color-hero-bg:    #1a1a2e;
 
   /* ---------- Spacing skala (baza 8px) ---------- */
   --space-1: 0.25rem;   /*  4px */
